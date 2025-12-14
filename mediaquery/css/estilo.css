@@ -1,0 +1,105 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #b8d8c7;
+  padding: 30px;
+}
+
+
+.contenedor{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.card{
+  background: #fff;
+  display: flex;
+  width: 600px;
+  height: 550px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+.imagen{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.imagen img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.info{
+  width: 50%;
+  background: #f6eeea;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:initial;
+  gap: 15px;
+}
+
+.info h2{
+  color: #c99a2c;
+}
+
+.info p{
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.precio{
+  font-weight: bold;
+  color: #c99a2c;
+  font-size: 18px;
+  text-align: center;
+}
+
+button{
+  background: #e6b81c;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  
+}
+
+
+@media (max-width: 600px){
+  .card{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .imagen,
+  .info{
+    width: 100%;
+  }
+
+  .imagen{
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 1024px){
+  .card{
+    width: 100%;
+    max-width: 700px;
+  }
+}
